@@ -2,93 +2,176 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Social Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35nm</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <section class="section intro">
-        <div class="container">
-          <h1> </h1>
-        </div>
-      </section>
-      
-      <section class="timeline">
-        <div class="info">
-          <!-- <img width="50" height="50" src="https://assets.codepen.io/210284/face.svg" alt="" /> -->
-          <h2>Social Design from Switzerland</h2>
-          <p>This is an overview of Social Design Projects from Switzerland.</p>
-        </div>
-      
-        <ol>
-          <li>
-            <div>
-              <time>Titel</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li>
-            <div>
-              <time>Titel</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-            </div>
-          </li>
-          <li></li>
-        </ol>
-      
-      </section>
-      
-      <footer class="page-footer">
-       
-      </footer>
+<!-- NAVBAR -->
+   <nav class="navbar">
+    <a href="index.html" class="navbar-title">35nm</a>
+    <a href="#" class="navbar-link" onclick="openAbout()">About</a>
+  </nav>
+
+ <div class="main-content">
+
+<!-- BILDBOXEN IN GALLERY -->
+  <div class="gallery">
+  <div class="box box1" id="box1">
+    <img src="Images/1.jpg" alt="Bild 1" 
+         data-lightbox-images="Images/1.jpg,Images/1.jpg,Images/1.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box2" id="box2">
+    <img src="Images/2.jpg" alt="Bild 2"
+         data-lightbox-images="Images/2.jpg,Images/2.jpg,Images/2.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box3" id="box3">
+    <img src="Images/3.jpg" alt="Bild 3"
+         data-lightbox-images="Images/3.jpg,Images/3.jpg,Images/3.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box4" id="box4">
+    <img src="Images/4.jpg" alt="Bild 4"
+         data-lightbox-images="Images/4.jpg,Images/4.jpg,Images/4.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box5" id="box5">
+    <img src="Images/5.jpg" alt="Bild 5"
+         data-lightbox-images="Images/5.jpg,Images/5.jpg,Images/5.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box6" id="box6">
+    <img src="Images/6.jpg" alt="Bild 6"
+         data-lightbox-images="Images/6.jpg,Images/6.jpg,Images/6.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box7" id="box7">
+    <img src="Images/7.jpg" alt="Bild 7"
+         data-lightbox-images="Images/7.jpg,Images/7.jpg,Images/7.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box8" id="box8">
+    <img src="Images/8.jpg" alt="Bild 8"
+         data-lightbox-images="Images/8.jpg,Images/8.jpg,Images/8.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box9" id="box9">
+    <img src="Images/9.jpg" alt="Bild 9"
+         data-lightbox-images="Images/9.jpg,Images/9.jpg,Images/9.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box10" id="box10">
+    <img src="Images/10.jpg" alt="Bild 10"
+         data-lightbox-images="Images/10.jpg,Images/10.jpg,Images/10.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box11" id="box11">
+    <img src="Images/11.jpg" alt="Bild 11"
+         data-lightbox-images="Images/11.jpg,Images/11.jpg,Images/11.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box12" id="box12">
+    <img src="Images/12.jpg" alt="Bild 12"
+         data-lightbox-images="Images/12.jpg,Images/12.jpg,Images/12.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box13" id="box13">
+    <img src="Images/13.jpg" alt="Bild 13"
+         data-lightbox-images="Images/13.jpg,Images/13.jpg,Images/13.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box14" id="box14">
+    <img src="Images/14.jpg" alt="Bild 14"
+         data-lightbox-images="Images/14.jpg,Images/14.jpg,Images/14.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  <div class="box box15" id="box15">
+    <img src="Images/15.jpg" alt="Bild 15"
+         data-lightbox-images="Images/15.jpg,Images/15.jpg,Images/15.jpg"
+         data-lightbox-text="Titel"
+         data-lightbox-detail-text="Hier folgt der Fliesstext, zur Beschreibung der Bilder links. Dieser liefert tiefere Infomationen."
+         onclick="openLightbox(); setCurrentImage(this)">
+  </div>
+  
+
+<!-- GALLERY LIGHTBOX SETUP-->
+  <div id="lightbox" class="lightbox">
+  <button class="close-button" onclick="closeLightbox()">X</button>
+  <div class="lightbox-scroll">
+    <!-- Die Bilder werden durch JavaScript dynamisch eingefügt -->
+  </div>
+  <div class="lightbox-text">
+    <p>Titel</p>
+    <!-- Der Text wird durch JavaScript dynamisch eingefügt-->
+  </div>
+  </div>
+
+<!-- ABOUT LIGHTBOX -->
+  <div id="aboutBox" class="lightbox">
+  <div class="lightbox-content">
+      <img class="lightbox-image" src="Images/About.jpg" alt="About Image">
+      <div class="lightbox-text">
+          <button class="close-button" onclick="closeAbout()">X</button>
+          <h1>Über dieses Projekt</h1>
+          <p>Willkommen auf meiner Webseite, die als dynamischer Platzhalter für mein Bachelor-Lehrprojekt dient.
+            <br>
+            <br>
+            Mein Ziel ist es, einen Einblick in die Entwicklung und den Fortschritt meines Projekts zu geben. Ich nutze diese Seite, um wichtige Meilensteine, interessante Erkenntnisse und visuelle Darstellungen meiner Arbeit zu teilen.</p>
+      </div>
+  </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+  <div class="page-footer">
+    <div class="footer-left">
+      <p>35nm</p>
+      <p>©2023</p>
+    </div>
+  <div class="footer-center">
+      <p><a href="#">Digezz</a></p>
+      <p><a href="#">Instagram</a></p>
+  </div>
+  <div class="footer-right">
+      <p><a href="#">E-Mail 1</a></p>
+      <p><a href="#">E-Mail 2</a></p>
+  </div>
+  </div>
+
+<!-- BACK TO TOP-BUTTON -->
+  <button onclick="topFunction()" class="back-to-top">&#8593;</button>
 
 <script src="script.js"></script>
 </body>
