@@ -72,7 +72,7 @@ function closeAbout() {
   aboutBox.addEventListener('animationend', function() {
       aboutBox.style.display = 'none';
       aboutBox.classList.remove('closing');
-      document.body.style.overflow = 'auto'; // Setzt Scrollen auf Standard zurück
+      document.body.style.overflow = 'auto'; //Setzt Scrollen auf Standard zurück
   }, { once: true });
 }
 
